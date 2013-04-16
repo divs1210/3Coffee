@@ -5,7 +5,7 @@ A simple Java-based 2D game engine that was written during boring lectures.
 ________________________________________________________________________
 
 Who is it for?
-3Coffee is easy enough for newbies to start with, and loaded enough to create a small classic.
+3Coffee is easy enough for newbies to start with, and loaded enough to support a small classic.
 
 Disclaimer:
 3Coffee is not a professional game engine, and neither is it optimized.
