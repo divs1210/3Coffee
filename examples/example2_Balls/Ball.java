@@ -75,6 +75,10 @@ public class Ball extends Sprite {
 		yvel = y;
 	}
 	
+	public double getVel(){
+		return Math.sqrt(xvel*xvel + yvel*yvel);
+	}
+	
 	public void setRandomVel(){
 		Random r = new Random();
 		xvel = r.nextInt(2)+1;
@@ -84,10 +88,6 @@ public class Ball extends Sprite {
 			xvel *= -1;
 		if(r.nextBoolean())
 			yvel *= -1;
-	}
-	
-	public double getVel(){
-		return Math.sqrt(xvel*xvel + yvel*yvel);
 	}
 	
 }
