@@ -22,8 +22,6 @@ import com.threecoffee.control.GameWindow;
  */
 public class StickMan extends Actor {
 
-	
-	
 	StickMan(){
 		setName("stickman");
 
@@ -61,6 +59,7 @@ public class StickMan extends Actor {
 		this.setCurrentAnimation(0);
 	}
 	
+	@Override
 	public void update(){
 		if(GameWindow.isKeyDown(KeyEvent.VK_RIGHT) && !Game.ended){
 			moveSprite(15, 0);
