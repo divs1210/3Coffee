@@ -22,6 +22,7 @@ public class Cloud extends Sprite {
 		addImage(new ImageIcon("media/balls/sprites/clouds/cloud"+type+".png"));
 	}
 	
+	@Override
 	public void update(){
 		if(getX()+getWidth()<=0)
 			setLocation(getGameWindow().getWidth(), getY());
