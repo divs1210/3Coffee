@@ -35,6 +35,7 @@ public class Ball extends Sprite {
 		setDelay(5);
 	}
 	
+	@Override
 	public void update(){
 		moveSprite(xvel, yvel);
 		
@@ -44,26 +45,7 @@ public class Ball extends Sprite {
 			yvel *= -1;
 	}
 	
-	public void setVel(int x, int y){
-		xvel = x;
-		yvel = y;
-	}
-	
-	public void setRandomVel(){
-		Random r = new Random();
-		xvel = r.nextInt(2)+1;
-		yvel = r.nextInt(2)+1;
-		
-		if(r.nextBoolean())
-			xvel *= -1;
-		if(r.nextBoolean())
-			yvel *= -1;
-	}
-	
-	public double getVel(){
-		return Math.sqrt(xvel*xvel + yvel*yvel);
-	}
-	
+	@Override
 	public void collided(Sprite s){
 		if(Math.abs((s.getX()+s.getWidth()/2)-(getX()+getWidth()/2))<=20 && getY()+getHeight()>=s.getY()+10){
 			
@@ -87,4 +69,25 @@ public class Ball extends Sprite {
 			h.display();
 		}
 	}
+	
+	public void setVel(int x, int y){
+		xvel = x;
+		yvel = y;
+	}
+	
+	public void setRandomVel(){
+		Random r = new Random();
+		xvel = r.nextInt(2)+1;
+		yvel = r.nextInt(2)+1;
+		
+		if(r.nextBoolean())
+			xvel *= -1;
+		if(r.nextBoolean())
+			yvel *= -1;
+	}
+	
+	public double getVel(){
+		return Math.sqrt(xvel*xvel + yvel*yvel);
+	}
+	
 }
