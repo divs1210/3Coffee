@@ -2,14 +2,9 @@
 //Designed by Soumyadeep Ghosh
 
 package dragon_egg;
-
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
-
 import com.threecoffee.anim.Sprite;
-
-import example2_Balls.Game;
-import example2_Balls.Highscores;
 
 public class Egg extends Sprite {
 
@@ -59,10 +54,11 @@ public class Egg extends Sprite {
 				
 				getGameWindow().setAlwaysOnTop(false);
 				JOptionPane.showMessageDialog(getGameWindow(), "Score : "+dragon_egg.Game.score);
-			
-				HighScore h = new HighScore();
+			   
+				
+				HighScore h=new HighScore();
 				h.addScore(dragon_egg.Game.score);
-				h.display();
+				h.display();				
 			}
 		}
 		

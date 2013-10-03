@@ -60,7 +60,7 @@ public class Game extends GameWindow{
 		
 		Ball b3 = new Ball();
 		b3.setLocation(r.nextInt(getWidth()-b.getWidth()-5)+5, r.nextInt(b.getHeight()/2)+5);
-		while((b.getVel()>=2.2 || b2.getVel()>=2.2) && b3.getVel()>=2.2)
+ 		while((b.getVel()>=2.2 || b2.getVel()>=2.2) && b3.getVel()>=2.2)
 			b3.setRandomVel();
 		b3.yvel = -1;
 		b3.addTo(this);

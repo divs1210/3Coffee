@@ -4,15 +4,12 @@
 package dragon_egg;
 
 import java.awt.Color;
+
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 import com.threecoffee.anim.Sprite;
 import com.threecoffee.control.GameWindow;
-
-import example2_Balls.StickMan;
-
-@SuppressWarnings("serial")
 public class Game extends GameWindow {
 
 	Wagon w;

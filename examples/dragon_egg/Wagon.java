@@ -23,15 +23,15 @@ public class Wagon extends Actor {
 		
 		anims[0] = new Animation();
 		anims[0].setName("stand");
-		anims[0].add(new ImageIcon("media/dragon egg/wagon/1.jpg"));
+		anims[0].add(new ImageIcon("media/dragon egg/wagon/1.PNG"));
 		
 		anims[1] = new Animation();
 		anims[1].setName("move");
 		anims[1].setDelay(45);
-		anims[1].add(new ImageIcon("media/dragon egg/wagon/1.jpg"));
-		anims[1].add(new ImageIcon("media/dragon egg/wagon/2.jpg"));
-		anims[1].add(new ImageIcon("media/dragon egg/wagon/3.jpg"));
-		anims[1].add(new ImageIcon("media/dragon egg/wagon/4.jpg"));
+		anims[1].add(new ImageIcon("media/dragon egg/wagon/1.PNG"));
+		anims[1].add(new ImageIcon("media/dragon egg/wagon/2.PNG"));
+		anims[1].add(new ImageIcon("media/dragon egg/wagon/3.PNG"));
+		anims[1].add(new ImageIcon("media/dragon egg/wagon/4.PNG"));
 		
 		anims[2] = new Animation();
 		anims[2].setName("die");
